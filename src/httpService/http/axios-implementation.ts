@@ -11,7 +11,7 @@ export abstract class AxiosImplementation<T, S> {
   getHttp (params: object, methodsUrl?: string, headers?: object): AxiosPromise<T> {
     let url: string = this.baseUrl
     if (methodsUrl) url = url.concat(methodsUrl)
-    return axios.get(url).then((value: any) => {
+    return axios.get(url, {params: params}).then((value: any) => {
       return this.encode(value)
     }).catch((reason: any) => {
       return reason
