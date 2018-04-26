@@ -1,3 +1,3 @@
-# Quasar App
+# Quasar App: Quasar+typescript+Axios+VueRouter
 
 > WIP
