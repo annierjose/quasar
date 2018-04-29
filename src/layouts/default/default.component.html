@@ -16,7 +16,7 @@
       :content-class="$q.theme === 'mat' ? 'bg-grey-2' : null">
       <q-list no-border link inset-delimiter>
         <q-list-header>Header list menu</q-list-header>
-        <q-item v-for="m in menu.menuItem" @click.native="m.clickAction">
+        <q-item v-for="(m, index) in menu.menuItem" :key="index" @click.native="m.clickAction">
           <q-item-side :icon="m.icon" />
           <q-item-main :label="m.label" :sublabel="m.sublabel" />
         </q-item>

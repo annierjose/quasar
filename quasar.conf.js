@@ -82,7 +82,8 @@ module.exports = function (ctx) {
         'QListHeader',
         'QItem',
         'QItemMain',
-        'QItemSide'
+        'QItemSide',
+        'QInput'
       ],
       directives: [
         'Ripple'
@@ -135,7 +136,7 @@ module.exports = function (ctx) {
       }
     },
     cordova: {
-      // id: 'org.cordova.quasar.app'
+      id: 'org.cordova.quasar.app.jalfonso'
     },
     electron: {
       extendWebpack (cfg) {
