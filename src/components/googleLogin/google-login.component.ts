@@ -81,10 +81,6 @@ export default class GoogleLoginComponent extends Vue {
   }
 
   public mounted () {
-    this.initClient().then(() => {
-      console.log('click')
-      this.handleAuthClick()
-    })
-
+    this.initClient()
   }
 }
